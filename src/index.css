@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+li{
+  list-style: none;
+}
+ul{
+  padding: 0;
+}
+p{
+  margin-bottom: 0;
+}
+.loginPage{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myfont_family{
+  font-family: 'Baloo Paaji 2', cursive;
+}
+.myfont_family_2{
+  font-family: 'DM Sans', sans-serif;
+}
+.mytitle{
+  font-size: 35px;
+  font-weight: 500;
+}
+.myorange{
+  color:#fa4b63 ;
+}
+.mybackground{
+  background-color:white !important ;
+}
+.loginSection{
+  border: 1px solid black;
+  height: 60%;
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.inside{
+  width: 40%;
+  height: 90%;
+}
+.loginTitle{
+  padding-top: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 23px;
+}
+.formSection input{
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 3px 7px;
+  font-size: 17px;
+  margin-top: 30px;
+}
+.signUp{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.submitButton button{
+  width: 100%;
+  padding: 5px 10px;
+  margin-top: 30px;
+}
+.home{
+  padding: 7px 30px;
+}
+.homeHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.allBlogs{
+  position: relative;
+}
+.allBlogs li{
+  display: flex;   
+  border:1px solid rgba(0, 0, 0, 0.09);
+  padding: 3px ;
+  margin-top: 25px;
+}
+.blogDetails{
+  padding-left:7px ;
+}
+.blogTitle{
+  margin: 10px 0;
+}
+.blogInfo{
+  margin-bottom: 15px;
+}
+.blogBtn{
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+}
+.myImg img{
+  width: 200px;
+  height: 200px;
+}
+.searching {
+ display: flex;
+ justify-content: center;
+ align-items: center ;
+}
+.searching img{
+  width: 25px;
+  height:25px;
+}
+.logOut{
+  position: absolute;
+  z-index: 999;
+  top: 35px;
+  right:0px;
+  background-color: #fefefe;
+  border: 1px solid rgba(0, 0, 0, 0.626);
+}
+.logOut li{
+  list-style: none;
+  padding: 7px 30px 7px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.129);
+}
+.changeProfile{
+  display: none;
+  transition: 0.5s;
+}
+.myinputs{
+  position: relative;
+}
+.validationError{
+  padding-top: 4px;
+  padding-left: 7px;
+  color: tomato;
+}
+/* Welcoming Page */
+.backgroundPage{
+  height: 90%;
+  background-color: black;
+}
+.mypicBackground{
+  background-image:url("./assets/background_center.png");
+  z-index: 1;
+  position: fixed;
+  opacity: 0.3;
+ 
+}
+
+.socialLogo>img{
+  height: 25px;
+  width: 25px;
+}
+.mynames{
+  top: 30%;
+}
+/* Navbar */
+.myNavbar{
+  color: black;
+  z-index: 999;
+  height: 70px;
+  padding:20px 80px 0 80px;
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px #00000036;
+  
+}
+.myNavbar img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.profile_login{
+  left:50%;
+  top:-15px;
+  z-index: 999;
+  
+}
+.expert_border{
+  border-bottom:1px solid rgba(0, 0, 0, 0.383);
+}
+.about_space{
+  display:grid;
+  grid-template-columns: 32% 36% 32%;
+}
+.a_one{
+  padding-right: 20px;
+}
+.a_two,.a_three{
+  border-left: 1px solid black;
+  padding-left: 40px;
+}
+.about_sub_titles{
+  font-size: 30px;
+}
+.my_hr{
+  background-color: #fa4b63;
+  border: 1px solid #fa4b63 ;
+  width: 30px;
+  padding-top: -50px;
+}
+img.socialLogo_2{
+  width: 25px;
+  height: 25px;
+}
+.about_page{
+  width: 100%;
+  z-index: 90;
+  border-bottom: 1px solid black;
+}
+.cv_btn button{
+  color: #fa4b63;
+  border-color: #fa4b63;
+}
+/*___________________________________________ Skills page ___________________________________*/
+.skill_page{
+  z-index: 999;
+}
+.skill_page,.portofolio_page,.blog_page{
+  padding-top: 80px;
+}
+.skill_rating{
+  display: grid;
+  grid-template-columns: repeat(3,33.3%);
+}
+.progress_bar{
+  position: relative;
+}
+.skill_img img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.progress_bar_1,.progress_bar_2{
+  border-radius: 20px;
+}
+.progress_bar_1{
+  width: 220px;
+  margin: 2px 0 2px 2px ;
+  position: absolute;
+  height: 4px;
+  background-color: #fa4b63;
+}
+.progress_bar_2{
+  background-color: #F5F5F5;
+  width: 250px;
+  height: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+.tec_name{
+  align-items: unset;
+}
+.theSkills {
+  padding-bottom: 25px;
+}
