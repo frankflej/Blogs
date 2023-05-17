@@ -1,7 +1,12 @@
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import  breakWords  from './breaking';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 const Allblogs = ({blogs,deleteBtn}) => {
     const allblogs=blogs
+    const role=useSelector(state=>state.isAdmin)
+    console.log(role)
     return ( 
      <div>        
         <ul className='allBlogs'>
@@ -18,12 +23,13 @@ const Allblogs = ({blogs,deleteBtn}) => {
                     </div>
                     <div className="blogInfo">
                         <Typography variant='body1'>
-                            {blog.content}
+                            {breakWords(blog.content)}... <Link> Read more</Link>
+                            
                         </Typography>
                     </div>
-                    <div className="blogBtn">
+                    {role && <div className="blogBtn">
                         <Button  variant='outlined' color='secondary'  onClick={()=>{deleteBtn(index)}}>Delete</Button>
-                    </div>
+                    </div>}
                 </div>
             </li>
                 ))

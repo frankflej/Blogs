@@ -1,26 +1,23 @@
-import { useEffect,useState } from "react";
+import {useEffect, useState } from "react";
 import Allblogs from "./AllBlogs";
 import {Link} from 'react-router-dom'
 import Searching from "./searching";
 import Typography from '@mui/material/Typography';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { useSelector } from "react-redux";
+
 
 
 const Home = () => {
     let [allblogs,setBlogs]=useState(null)
     let [searching,setSearching]=useState('true')
-
-    const deleteBtn=(blogId)=>{
-        const newBlogs=allblogs.filter((s,index)=>{
-            return  index !== blogId
+    
+    const deleteBtn=(bId)=>{
+        const newBlogs= allblogs.filter((blog,index)=>{
+            return bId !== index
         })
-        setSearching(newBlogs)
+        setBlogs(newBlogs)
     }
-
-    const myToggle=(mid,classname)=>{
-        document.getElementById(mid).classList.toggle(classname)
-        }
 
     useEffect(()=>{
         fetch('https://my-brand-frontend.onrender.com/myapi/blog')
@@ -34,7 +31,13 @@ const Home = () => {
         .catch((error)=>{
             console.log(error)
         })
-},[])
+    },[])
+
+    const myToggle=(mid,classname)=>{
+        document.getElementById(mid).classList.toggle(classname)
+        }
+
+
 
     return ( 
         <section className="home">
