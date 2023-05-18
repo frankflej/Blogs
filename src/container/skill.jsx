@@ -9,16 +9,16 @@ import BOOTSTRAPPIC from '../assets/bootstrap.png'
 import REACTPIC from '../assets/react.png'
 const Skill = () => {
     return ( 
-        <div className="skill_page position-relative mybackground" id="myskill_page">
+        <div className="skill_page position-relative container mybackground" id="myskill_page">
 
-              <div className="mytitle myfont_family pb_50 mypadding">
+              <div className="mytitle myfont_family mb-4 mypadding">
                 <p><span className="myorange">My </span>Skills</p>
                 </div>
 
               <div className="skill_rating mypadding">
-                <div className="html myflex pb_20">
-                    <div className="progress ">
-                        <div className="tec_name myflex_start">
+                <div className="html d-flex align-items-center theSkills ">
+                    <div className="myprogress ">
+                        <div className="tec_name d-flex align-items-center justify-content-start">
                             <div className="skill_img">
                                 <img src={HTMLPIC} alt=""/>
                             </div>
@@ -36,9 +36,9 @@ const Skill = () => {
                     </div>
                 </div>
 
-                <div className="sql myflex_center pb_20">
-                    <div className="progress">
-                        <div className="tec_name myflex_start">
+                <div className="sql d-flex align-items-center justify-content-center theSkills ">
+                    <div className="myprogress">
+                        <div className="tec_name d-flex align-items-center justify-content-start">
                             <div className="skill_img">
                                 <img src={SQLPIC} alt=""/>
                             </div>
@@ -56,9 +56,9 @@ const Skill = () => {
                     </div>
                 </div>
 
-                <div className="figma myflex_end pb_20">
-                    <div className="progress">
-                        <div className="tec_name myflex_start">
+                <div className="figma d-flex align-items-center justify-content-end theSkills ">
+                    <div className="myprogress">
+                        <div className="tec_name d-flex align-items-center justify-content-start">
                             <div className="skill_img">
                                 <img src={FIGMAPIC} alt=""/>
                             </div>
@@ -76,9 +76,9 @@ const Skill = () => {
                     </div>
                 </div>
 
-                <div className="css myflex pb_20">
-                    <div className="progress">
-                        <div className="tec_name myflex_start">
+                <div className="css d-flex align-items-center theSkills ">
+                    <div className="myprogress">
+                        <div className="tec_name d-flex align-items-center justify-content-start">
                             <div className="skill_img">
                                 <img src={CSSPIC} alt=""/>
                             </div>
@@ -96,9 +96,9 @@ const Skill = () => {
                     </div>
                 </div>
 
-                <div className="node myflex_center pb_20" >
-                    <div clasclassNames="progress">
-                        <div className="tec_name myflex_start">
+                <div className="node d-flex align-items-center justify-content-center theSkills " >
+                    <div clasclassNames="myprogress">
+                        <div className="tec_name d-flex align-items-center justify-content-start">
                             <div className="skill_img">
                                 <img src={NODEPIC} alt=""/>
                             </div>
@@ -116,9 +116,9 @@ const Skill = () => {
                     </div>
                 </div>
 
-                <div className="adobe myflex_end pb_20">
-                    <div className="progress">
-                        <div className="tec_name myflex_start">
+                <div className="adobe d-flex align-items-center justify-content-end theSkills ">
+                    <div className="myprogress">
+                        <div className="tec_name d-flex align-items-center justify-content-start">
                             <div className="skill_img">
                                 <img src={PHOTOSHOPPIC} alt=""/>
                             </div>
@@ -136,9 +136,9 @@ const Skill = () => {
                     </div>
                 </div>
 
-                <div className="javascript myflex pb_20">
-                    <div className="progress">
-                        <div className="tec_name myflex">
+                <div className="javascript d-flex align-items-center theSkills ">
+                    <div className="myprogress">
+                        <div className="tec_name d-flex align-items-center ">
                             <div className="skill_img"> 
                                 <img src={JSPIC} alt=""/>
                             </div>
@@ -156,9 +156,9 @@ const Skill = () => {
                     </div>
                 </div>
 
-                <div className="boostrap myflex_center pb_20">
-                    <div className="progress">
-                        <div className="tec_name myflex_start">
+                <div className="boostrap d-flex align-items-center justify-content-center theSkills ">
+                    <div className="myprogress">
+                        <div className="tec_name d-flex align-items-center justify-content-start">
                             <div className="skill_img">
                                 <img src={BOOTSTRAPPIC} alt=""/>
                             </div>
@@ -176,9 +176,9 @@ const Skill = () => {
                     </div>
                 </div>
 
-                <div className="react myflex_end pb_20">
-                    <div className="progress">
-                        <div className="tec_name myflex_start">
+                <div className="react d-flex align-items-center justify-content-end theSkills ">
+                    <div className="myprogress">
+                        <div className="tec_name d-flex align-items-center justify-content-start">
                             <div className="skill_img">
                                 <img src={REACTPIC} alt=""/>
                             </div>
