@@ -95,7 +95,7 @@ const Login = () => {
                    <div className='validationError'>
                    {wrongCredentials && <Typography variant='body1' align='center'>{errorMsg}</Typography>}
                    </div>
-                    <div className='myinputs'>
+                    <div className='myinputs my-1'>
                         <input type="text" value ={useremail} onChange={(e)=>setUseremail(e.target.value)} placeholder="Email" />
                         <div className='validationError'>
                         {emailMsg && <Typography variant='body2'>{errorMsg}</Typography>}
@@ -103,7 +103,7 @@ const Login = () => {
                     </div>
 
                   
-                    <div className='myinputs'>
+                    <div className='myinputs my-1'>
                         <input type="password" value ={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Password"/>
                         <div className='validationError'>
                             {passwordMsg &&  <Typography variant='body2' >{errorMsg}</Typography>}
@@ -121,14 +121,10 @@ const Login = () => {
                     </div>
                 </div>
 
-                <div className="submitButton">
-                   
-                         
-                         <Button type='submit' variant="contained" color='secondary'>
-                           {searching? <Searching/>: `Login`}
-                         </Button>
-                         
-                   
+                <div className="submitButton my-4">
+                    <Button type='submit' variant="contained" color='secondary'>
+                        {searching? <Searching/> : `Login` }
+                    </Button>
                 </div>
                 </form>
              </div>

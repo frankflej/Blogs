@@ -26,17 +26,17 @@ const BackgroundPage = () => {
               
             </div>
             <div className='position-absolute text-center w-100 mynames'>
-                <div className='my-4'>
-                <Typography variant='h3'>
-                I am Emery <span>Frank</span>
+                <div className='my-4 mywhite myfont_family'>
+                <Typography variant='h3' >
+                I am Emery <span className='myorange'>Frank</span>
                 </Typography>
                 </div>
-                <div className='my-4'>
+                <div className='my-4 mywhite'>
                     <Typography>
                         <u>I'M A CREATIVE WEB DESIGNER</u>
                     </Typography>
                 </div>
-                <div className='my-4'>
+                <div className='my-4 mywhite'>
                 <Typography>
                      I STAND ON A SWEET SPOT WHERE DESIGN & CODE INTERSECTS.
                 </Typography>

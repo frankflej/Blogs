@@ -55,7 +55,7 @@ const Home = () => {
                     <ul>
                         <li>Change profile</li>
                         <li>
-                            <Link to='/'>Log out</Link>
+                            <Link to='/login'>Log out</Link>
                         </li>
                     </ul>
                     </div>

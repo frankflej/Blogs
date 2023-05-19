@@ -8,7 +8,7 @@ function App() {
     <div className='mycontainer'>
       <Router>
         <Routes>
-           <Route exact path='/' element={<Login/>}></Route> 
+           <Route exact path='/login' element={<Login/>}></Route> 
            <Route exact path='/signup' element={<Signup/>}></Route> 
            <Route exact path='/home' element={<Home/>}></Route>
            <Route exact path='/welcome' element={<HomePage/>}></Route>

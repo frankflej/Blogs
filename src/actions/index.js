@@ -8,3 +8,9 @@ export const isuser=()=>{
         type:'User'
     }
 }
+
+export const myBlogs=()=>{
+    return{
+        type:"getBlogs"
+    }
+}

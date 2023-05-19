@@ -1,5 +1,6 @@
 import Frank from '../assets/frank.JPG'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const NavigationBar = () => {
     const [myheight,setMyHeight]=useState(0)
     function checkIfBoxReachedTop() {
@@ -27,7 +28,7 @@ const NavigationBar = () => {
                 <li>Contact</li>
             </ul>
             <div className='position-absolute  profile_login'>
-                <img src={Frank} alt=""/>
+                <Link to='/login'><img src={Frank} alt=""/></Link>
             </div>
         </div>
        </section>

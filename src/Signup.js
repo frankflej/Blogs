@@ -53,7 +53,7 @@ const Signup = () => {
         }).then((data)=>{
             alert(data.message)
             setSearching(false)
-            navigate('/')
+            navigate('/login')
         }).catch((error)=>{
             setSearching(true)
             setErrorMsg(error.message)
@@ -69,7 +69,7 @@ const Signup = () => {
             <div className="loginSection">
                <div className="inside">
                 <div className="loginTitle">
-                    <h3><span className="mycolor">Create</span>Account</h3>
+                    <h3><span className="mycolor">Create</span> Account</h3>
                 </div>
                <div className="formSection">
                <form action="" onSubmit={signUp}>
@@ -88,7 +88,7 @@ const Signup = () => {
                     <div>
                         <input type="password" value={cpassword} onChange={e=>setConfirmPassword(e.target.value)} placeholder="Confirm password"/>
                     </div>
-                    <div className="submitButton">
+                    <div className="submitButton mb-3">
                          <Button type='submit' variant="contained" color='secondary'>
                            {searching? <Searching/>: `Save`}
                          </Button>

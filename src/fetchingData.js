@@ -1,20 +1,18 @@
-import { useEffect,useState } from "react"
+import { useEffect } from "react"
 const useFetching=(thelink)=>{
-    let [alldata,setData]=useState(null)
-    let [searching,setSearching]=useState('true')
+
     useEffect(()=>{
-        fetch(thelink)
+        fetch('https://my-brand-frontend.onrender.com/myapi/blog')
         .then((response)=>{
             return response.json()
         })
         .then((data)=>{
-        setSearching(false)
-        setData(data.data)
+       return data
         })
         .catch((error)=>{
             console.log(error)
         })
-    })
-    return {alldata,searching}
+    },[])
+   
 }
 export default useFetching

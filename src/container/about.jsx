@@ -28,13 +28,13 @@ const About = () => {
                                 <hr class="my_hr"/>
                             </p>
                         </div>
-                        <div class="myfont_family sub_heading">
+                        <div className="myfont_family sub_heading">
                             <p>A Web Designer / Developer <br/> Located In Our Lovely Earth</p>
                         </div>
-                        <div class="myfont_family_2">
+                        <div className="myfont_family_2">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur fugit repellendusillo voluptas?</p>
                         </div>
-                        <div class=" myfont_family cv_btn">
+                        <div className=" myfont_family cv_btn">
                             <Button variant='outlined' >Download CV</Button>
                         </div>
                     </div>
